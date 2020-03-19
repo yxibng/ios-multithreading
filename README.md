@@ -2,7 +2,7 @@
 
 参考apple文档[Concurrency Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091-CH1-SW1)
 
-演示iOS多线程编程，以及使用线程锁来进行同步的demo
+演示iOS多线程编程，以及使用锁来进行线程同步的
 
 - NSLock
 - NSCondition
