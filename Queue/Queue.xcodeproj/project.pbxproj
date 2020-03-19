@@ -15,9 +15,19 @@
 		1158CFA021CD484F00BFA724 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1158CF9F21CD484F00BFA724 /* main.m */; };
 		1158CFB121CD50A700BFA724 /* QueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1158CFB021CD50A700BFA724 /* QueueTests.m */; };
 		1158CFB921CE4B9A00BFA724 /* SourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1158CFB821CE4B9A00BFA724 /* SourceTest.m */; };
-		1158CFE121CF579200BFA724 /* TestLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1158CFE021CF579200BFA724 /* TestLock.m */; };
 		1158CFE621CF592B00BFA724 /* LockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1158CFE521CF592B00BFA724 /* LockTest.m */; };
 		11C7FB9821CF8D63007C4603 /* GroupTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C7FB9721CF8D63007C4603 /* GroupTest.m */; };
+		86AEC83024235811000AA60F /* NSConditionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC82F24235811000AA60F /* NSConditionTest.m */; };
+		86AEC83424235E5B000AA60F /* NSConditionLockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC83324235E5B000AA60F /* NSConditionLockTest.m */; };
+		86AEC83724235FD8000AA60F /* SynchronizedTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC83624235FD8000AA60F /* SynchronizedTest.m */; };
+		86AEC83A2423643B000AA60F /* NSLockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC8392423643B000AA60F /* NSLockTest.m */; };
+		86AEC83D2423691B000AA60F /* PThreadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC83C2423691B000AA60F /* PThreadTest.m */; };
+		86AEC84024236D76000AA60F /* NSRecursiveLockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC83F24236D76000AA60F /* NSRecursiveLockTest.m */; };
+		86AEC843242370E5000AA60F /* SemaphoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC842242370E5000AA60F /* SemaphoreTest.m */; };
+		86AEC8462423721B000AA60F /* DispatchGroupTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC8452423721B000AA60F /* DispatchGroupTest.m */; };
+		86AEC849242374A8000AA60F /* DispatchQueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC848242374A8000AA60F /* DispatchQueueTest.m */; };
+		86AEC84C242384FC000AA60F /* DispatchSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC84B242384FC000AA60F /* DispatchSourceTest.m */; };
+		86AEC84F24238573000AA60F /* SpinLockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC84E24238573000AA60F /* SpinLockTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +55,30 @@
 		1158CFB021CD50A700BFA724 /* QueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueTests.m; sourceTree = "<group>"; };
 		1158CFB221CD50A700BFA724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1158CFB821CE4B9A00BFA724 /* SourceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceTest.m; sourceTree = "<group>"; };
-		1158CFDF21CF579200BFA724 /* TestLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLock.h; sourceTree = "<group>"; };
-		1158CFE021CF579200BFA724 /* TestLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLock.m; sourceTree = "<group>"; };
 		1158CFE521CF592B00BFA724 /* LockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockTest.m; sourceTree = "<group>"; };
 		11C7FB9721CF8D63007C4603 /* GroupTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupTest.m; sourceTree = "<group>"; };
+		86AEC82E24235811000AA60F /* NSConditionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionTest.h; sourceTree = "<group>"; };
+		86AEC82F24235811000AA60F /* NSConditionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionTest.m; sourceTree = "<group>"; };
+		86AEC83224235E5B000AA60F /* NSConditionLockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionLockTest.h; sourceTree = "<group>"; };
+		86AEC83324235E5B000AA60F /* NSConditionLockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockTest.m; sourceTree = "<group>"; };
+		86AEC83524235FD8000AA60F /* SynchronizedTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizedTest.h; sourceTree = "<group>"; };
+		86AEC83624235FD8000AA60F /* SynchronizedTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizedTest.m; sourceTree = "<group>"; };
+		86AEC8382423643B000AA60F /* NSLockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockTest.h; sourceTree = "<group>"; };
+		86AEC8392423643B000AA60F /* NSLockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockTest.m; sourceTree = "<group>"; };
+		86AEC83B2423691B000AA60F /* PThreadTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PThreadTest.h; sourceTree = "<group>"; };
+		86AEC83C2423691B000AA60F /* PThreadTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PThreadTest.m; sourceTree = "<group>"; };
+		86AEC83E24236D76000AA60F /* NSRecursiveLockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRecursiveLockTest.h; sourceTree = "<group>"; };
+		86AEC83F24236D76000AA60F /* NSRecursiveLockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRecursiveLockTest.m; sourceTree = "<group>"; };
+		86AEC841242370E5000AA60F /* SemaphoreTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreTest.h; sourceTree = "<group>"; };
+		86AEC842242370E5000AA60F /* SemaphoreTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreTest.m; sourceTree = "<group>"; };
+		86AEC8442423721B000AA60F /* DispatchGroupTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchGroupTest.h; sourceTree = "<group>"; };
+		86AEC8452423721B000AA60F /* DispatchGroupTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupTest.m; sourceTree = "<group>"; };
+		86AEC847242374A8000AA60F /* DispatchQueueTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchQueueTest.h; sourceTree = "<group>"; };
+		86AEC848242374A8000AA60F /* DispatchQueueTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueTest.m; sourceTree = "<group>"; };
+		86AEC84A242384FC000AA60F /* DispatchSourceTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSourceTest.h; sourceTree = "<group>"; };
+		86AEC84B242384FC000AA60F /* DispatchSourceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSourceTest.m; sourceTree = "<group>"; };
+		86AEC84D24238573000AA60F /* SpinLockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpinLockTest.h; sourceTree = "<group>"; };
+		86AEC84E24238573000AA60F /* SpinLockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpinLockTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +120,7 @@
 		1158CF8F21CD484D00BFA724 /* Queue */ = {
 			isa = PBXGroup;
 			children = (
+				86AEC8312423599C000AA60F /* classes */,
 				1158CF9021CD484D00BFA724 /* AppDelegate.h */,
 				1158CF9121CD484D00BFA724 /* AppDelegate.m */,
 				1158CF9321CD484D00BFA724 /* ViewController.h */,
@@ -99,8 +130,6 @@
 				1158CF9B21CD484F00BFA724 /* LaunchScreen.storyboard */,
 				1158CF9E21CD484F00BFA724 /* Info.plist */,
 				1158CF9F21CD484F00BFA724 /* main.m */,
-				1158CFDF21CF579200BFA724 /* TestLock.h */,
-				1158CFE021CF579200BFA724 /* TestLock.m */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -115,6 +144,35 @@
 				11C7FB9721CF8D63007C4603 /* GroupTest.m */,
 			);
 			path = QueueTests;
+			sourceTree = "<group>";
+		};
+		86AEC8312423599C000AA60F /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				86AEC82E24235811000AA60F /* NSConditionTest.h */,
+				86AEC82F24235811000AA60F /* NSConditionTest.m */,
+				86AEC83224235E5B000AA60F /* NSConditionLockTest.h */,
+				86AEC83324235E5B000AA60F /* NSConditionLockTest.m */,
+				86AEC83524235FD8000AA60F /* SynchronizedTest.h */,
+				86AEC83624235FD8000AA60F /* SynchronizedTest.m */,
+				86AEC8382423643B000AA60F /* NSLockTest.h */,
+				86AEC8392423643B000AA60F /* NSLockTest.m */,
+				86AEC83B2423691B000AA60F /* PThreadTest.h */,
+				86AEC83C2423691B000AA60F /* PThreadTest.m */,
+				86AEC83E24236D76000AA60F /* NSRecursiveLockTest.h */,
+				86AEC83F24236D76000AA60F /* NSRecursiveLockTest.m */,
+				86AEC841242370E5000AA60F /* SemaphoreTest.h */,
+				86AEC842242370E5000AA60F /* SemaphoreTest.m */,
+				86AEC8442423721B000AA60F /* DispatchGroupTest.h */,
+				86AEC8452423721B000AA60F /* DispatchGroupTest.m */,
+				86AEC847242374A8000AA60F /* DispatchQueueTest.h */,
+				86AEC848242374A8000AA60F /* DispatchQueueTest.m */,
+				86AEC84A242384FC000AA60F /* DispatchSourceTest.h */,
+				86AEC84B242384FC000AA60F /* DispatchSourceTest.m */,
+				86AEC84D24238573000AA60F /* SpinLockTest.h */,
+				86AEC84E24238573000AA60F /* SpinLockTest.m */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,10 +275,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86AEC84F24238573000AA60F /* SpinLockTest.m in Sources */,
+				86AEC83024235811000AA60F /* NSConditionTest.m in Sources */,
+				86AEC83A2423643B000AA60F /* NSLockTest.m in Sources */,
 				1158CF9521CD484D00BFA724 /* ViewController.m in Sources */,
+				86AEC8462423721B000AA60F /* DispatchGroupTest.m in Sources */,
 				1158CFA021CD484F00BFA724 /* main.m in Sources */,
-				1158CFE121CF579200BFA724 /* TestLock.m in Sources */,
+				86AEC83D2423691B000AA60F /* PThreadTest.m in Sources */,
+				86AEC83424235E5B000AA60F /* NSConditionLockTest.m in Sources */,
+				86AEC843242370E5000AA60F /* SemaphoreTest.m in Sources */,
 				1158CF9221CD484D00BFA724 /* AppDelegate.m in Sources */,
+				86AEC84C242384FC000AA60F /* DispatchSourceTest.m in Sources */,
+				86AEC84024236D76000AA60F /* NSRecursiveLockTest.m in Sources */,
+				86AEC849242374A8000AA60F /* DispatchQueueTest.m in Sources */,
+				86AEC83724235FD8000AA60F /* SynchronizedTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

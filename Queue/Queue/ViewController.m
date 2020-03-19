@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "NSConditionTest.h"
+#import "NSConditionLockTest.h"
+#import "SynchronizedTest.h"
+#import "NSLockTest.h"
 @interface ViewController ()
-
+@property(nonatomic, strong) NSConditionTest *conditionTest;
+@property (nonatomic, strong) SynchronizedTest *synchronizedTest;
+@property (nonatomic, strong) NSLockTest *nslockTest;
 @end
 
 @implementation ViewController
@@ -16,13 +22,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   
+    //    [self testSynchronized];
+    [self testNSLock];
+//    [self testCondition];
+//    [self testConditionLock];
+    
 //    [self createNSTimerAndFire];
 //    [self createNSTimerAndAddToRunloop];
 //    [self createDispatchTimer];
-    [self createDisplayLink];
+//    [self createDisplayLink];
     
 }
 
+- (void)testCondition
+{
+    self.conditionTest = [[NSConditionTest alloc] init];
+    [self.conditionTest startTest];
+}
+
+
+- (void)testConditionLock
+{
+    [NSConditionLockTest startTest];
+}
+
+- (void)testSynchronized
+{
+    self.synchronizedTest = [[SynchronizedTest alloc] init];
+    [self.synchronizedTest performSelector:@selector(startTest)];
+}
+
+- (void)testNSLock
+{
+    self.nslockTest = [[NSLockTest alloc] init];
+    [self.nslockTest performSelector:@selector(startTest)];
+}
 
 -(void)createNSTimerAndFire
 {

@@ -122,10 +122,14 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [lock lock];
         
-        while (products.count == 0) {
+        if (products.count < 10) {
             NSLog(@"wait for product");
             [lock wait];
+            NSLog(@"after wait");
         }
+//        while (products.count <= 10) {
+//
+//        }
         [products removeObjectAtIndex:0];
         NSLog(@"consume a product");
         [lock unlock];
@@ -133,11 +137,16 @@
     
     //Father线程
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [lock lock];
-        [products addObject:@1];
-        NSLog(@"produce a product");
-        [lock signal];
-        [lock unlock];
+        
+        while (products.count < 10) {
+            [lock lock];
+            [products addObject:@1];
+            NSLog(@"produce a product");
+            [lock signal];
+            NSLog(@"after signal");
+            [lock unlock];
+        }
+
     });
     
 }

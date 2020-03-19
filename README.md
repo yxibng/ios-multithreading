@@ -2,13 +2,21 @@
 
 参考apple文档[Concurrency Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091-CH1-SW1)
 
-iOS 多线程编程demo代码。
-* dispatch queue
-* dispatch source
-* dispatch group
+演示iOS多线程编程，以及使用线程锁来进行同步的demo
 
-iOS定时器的使用
-* NSTimer
-* dispatch source timer
-* CADisplayLink
+- NSLock
+- NSCondition
+- NSConditionLock
+- NSRecursiveLock
+- @synchronized
+- dispatch_queue
+	- serial
+	- concurrent
+	- dispatch_apply
+	- dispatch_barrier
+- dispatch_semaphore
+- dispatch_group
+- pthread_mutex
+- dispatch_source(timer)
+
 
